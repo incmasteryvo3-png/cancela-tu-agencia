@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mastery — Cancela tu Agencia</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- ══════════════════════════════════════
+     META PIXEL — PÁGINA VISTA
+     Reemplaza TU_PIXEL_ID_AQUI por tu ID real de Meta Pixel
+══════════════════════════════════════ -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1903630753673137');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent', { content_name: 'Landing Cancela tu Agencia — Estática' });
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1903630753673137&ev=PageView&noscript=1"
+/></noscript>
+<!-- FIN META PIXEL -->
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --dark:   #07050b;
+  --dark2:  #090712;
+  --light:  #F7F7F5;
+  --orchid: #7A2394;
+  --orchid-hi: #9b3eb8;
+  --amber:  #FFA51F;
+  --tomato: #FF6347;
+  --white:  #ffffff;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Poppins', -apple-system, Arial, sans-serif;
+  background:
+    radial-gradient(ellipse at 25% 25%, rgba(122,35,148,0.16) 0%, transparent 55%),
+    radial-gradient(ellipse at 78% 70%, rgba(122,35,148,0.09) 0%, transparent 50%),
+    var(--dark);
+  color: var(--white);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ── LOGO ── */
+.logo {
+  display: inline-flex; align-items: baseline;
+  font-family: 'Nunito', 'Arial Black', sans-serif;
+  font-weight: 800; font-size: 18px; letter-spacing: -0.045em;
+  color: inherit; text-decoration: none; line-height: 1;
+}
+.logo-dot {
+  display: inline-block; width: 5px; height: 5px; border-radius: 50%;
+  background: linear-gradient(160deg, var(--orchid-hi) 0%, var(--tomato) 50%, var(--amber) 100%);
+  margin-left: 1px; margin-bottom: 2px; flex-shrink: 0;
+  box-shadow: 0 0 5px rgba(122,35,148,0.7), 0 0 10px rgba(255,99,71,0.3);
+}
+
+/* ── NAV ── */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1.25rem 3rem;
+  background: rgba(7,5,11,0.92);
+  backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);
+  border-bottom: 0.5px solid rgba(122,35,148,0.18);
+}
+.nav-cta {
+  font-size: 12px; font-weight: 500; letter-spacing: 0.07em;
+  text-transform: uppercase; color: white; text-decoration: none;
+  background: linear-gradient(135deg, #8a2aaa, #4e1162);
+  padding: 8px 22px; border-radius: 20px; transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(122,35,148,0.35); white-space: nowrap;
+}
+.nav-cta:hover { transform: translateY(-1px); box-shadow: 0 8px 30px rgba(122,35,148,0.55); }
+
+/* ── MAIN SPLIT ── */
+main {
+  min-height: 100vh;
+  display: flex; align-items: center;
+  padding: 8.5rem 3rem 4rem;
+}
+.split {
+  max-width: 1240px; margin: 0 auto; width: 100%;
+  display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 4rem; align-items: center;
+}
+
+/* ── TYPE (idéntica a la landing original) ── */
+.eyebrow {
+  font-size: 9px; font-weight: 600; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--orchid-hi); margin-bottom: 1.25rem;
+}
+.accent-line { width: 28px; height: 3px; background: var(--orchid); border-radius: 2px; margin-bottom: 2rem; }
+.headline-split {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2.1rem, 3.6vw, 3.7rem); font-weight: 800;
+  line-height: 1.03; letter-spacing: -0.04em; margin-bottom: 1.75rem;
+}
+.grad-text {
+  background: linear-gradient(135deg, var(--orchid-hi), var(--amber));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.subtext {
+  font-size: 1rem; font-weight: 300; line-height: 1.75; max-width: 560px;
+  color: rgba(255,255,255,0.55); margin-bottom: 1.25rem;
+  text-align: justify; text-justify: inter-word;
+}
+
+/* ── CHECK LIST ── */
+.check-row { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; font-size: 0.87rem; line-height: 1.5; color: rgba(255,255,255,0.75); }
+.check-icon {
+  width: 22px; height: 22px; border-radius: 50%; flex-shrink: 0;
+  border: 1.5px solid rgba(122,35,148,0.4); color: var(--orchid-hi);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 700; background: rgba(122,35,148,0.08);
+}
+.checks { margin-bottom: 1.5rem; }
+
+.scarcity {
+  display: inline-block; margin-top: 0.5rem;
+  font-size: 0.78rem; color: rgba(255,255,255,0.4); letter-spacing: 0.02em;
+}
+.scarcity strong { color: var(--white); font-weight: 600; }
+
+/* ── CALENDAR CARD ── */
+.calendar-col { position: relative; }
+.calendar-card {
+  position: relative; border-radius: 20px; padding: 1.5rem;
+  background: rgba(255,255,255,0.03); overflow: hidden;
+}
+.calendar-card::before {
+  content: ''; position: absolute; inset: 0; border-radius: 20px; padding: 1px;
+  background: linear-gradient(140deg, rgba(122,35,148,0.8) 0%, rgba(255,165,31,0.35) 45%, rgba(122,35,148,0.08) 75%, transparent 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none;
+}
+.calendar-head { padding: 0.25rem 0.5rem 1rem; }
+.calendar-title { font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 0.3rem; }
+.calendar-sub { font-size: 0.78rem; font-weight: 300; color: rgba(255,255,255,0.45); }
+.calendar-embed {
+  background: #ffffff; border-radius: 14px; overflow: hidden; min-height: 560px;
+}
+.calendar-embed iframe { display: block; width: 100%; min-height: 560px; border: none; }
+.calendar-fine {
+  text-align: center; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(255,255,255,0.25); margin-top: 1rem;
+}
+
+/* ── REVEAL-IN ── */
+@keyframes fadeUp { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:translateY(0)} }
+.hero-el { opacity:0; animation: fadeUp 0.8s ease forwards; }
+.hero-el:nth-child(1){animation-delay:0.15s}
+.hero-el:nth-child(2){animation-delay:0.28s}
+.hero-el:nth-child(3){animation-delay:0.4s}
+.hero-el:nth-child(4){animation-delay:0.52s}
+.hero-el:nth-child(5){animation-delay:0.64s}
+.calendar-col { opacity:0; animation: fadeUp 0.9s ease forwards; animation-delay: 0.5s; }
+
+/* ── FOOTER ── */
+.footer { background: #04030a; padding: 2.25rem 3rem; border-top: 0.5px solid rgba(122,35,148,0.15); }
+.footer-links { display: flex; justify-content: center; gap: 2rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.footer-links a { font-size: 0.75rem; color: rgba(255,255,255,0.35); text-decoration: none; letter-spacing: 0.05em; }
+.footer-links a:hover { color: rgba(255,255,255,0.6); }
+.footer-text { max-width: 800px; margin: 0 auto; font-size: 0.7rem; line-height: 1.8; color: rgba(255,255,255,0.25); text-align: center; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 980px) {
+  .split { grid-template-columns: 1fr; gap: 2.5rem; }
+  main { padding: 7rem 1.5rem 3rem; }
+  .subtext { max-width: 100%; }
+}
+@media (max-width: 480px) {
+  .nav { padding: 1rem 1.25rem; }
+  .nav-cta { font-size: 11px; padding: 7px 14px; }
+  .calendar-card { padding: 1rem; }
+  .calendar-embed, .calendar-embed iframe { min-height: 620px; }
+  .footer { padding: 2rem 1.25rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a class="logo" href="#"><span>Mastery</span><span class="logo-dot"></span></a>
+  <a href="#calendario" class="nav-cta js-cta">Agenda tu diagnóstico →</a>
+</nav>
+
+<!-- SECCIÓN ÚNICA: HERO + CALENDARIO -->
+<main>
+  <div class="split">
+
+    <!-- COLUMNA IZQUIERDA: RESUMEN -->
+    <div class="content-col">
+      <div class="eyebrow hero-el">El modelo cambió</div>
+      <div class="accent-line hero-el"></div>
+      <h1 class="headline-split hero-el">El modelo <span class="grad-text">cambió</span></h1>
+      <p class="subtext hero-el" style="font-weight:500; color:rgba(255,255,255,0.75);">Cancela la agencia. Deja de comprar cursos. Tu negocio necesita algo mucho más serio.</p>
+      <p class="subtext hero-el">Tu problema: una agencia ejecuta una parte. Un curso te entrega otra. Y tú terminas intentando unirlo todo.</p>
+      <p class="subtext hero-el">En la incubadora definimos qué vendes, a quién y por qué deben elegirte; elevamos el valor de tu oferta; la llevamos al mercado con contenido, publicidad y embudos; y estructuramos la capacidad para sostener la pauta y, lo mejor, crecer sin depender de tu bolsillo.</p>
+
+      <div class="checks hero-el">
+        <div class="check-row"><span class="check-icon">✓</span><span><strong>Estrategia y escalamiento</strong> — rediseñamos tu producto, afinamos tu público y elevamos su valor con una oferta difícil de ignorar.</span></div>
+        <div class="check-row"><span class="check-icon">✓</span><span><strong>Marketing y ventas</strong> — conectamos branding, contenido, publicidad, embudos, seguimiento y cierre para convertir atención en ventas reales.</span></div>
+        <div class="check-row"><span class="check-icon">✓</span><span><strong>Capital inteligente</strong> — ampliamos la capacidad de inversión del negocio para sostener la operación, la pauta y su expansión.</span></div>
+      </div>
+
+      <a href="#calendario" class="nav-cta js-cta hero-el" style="display:inline-block; margin-bottom:1.25rem;">Agenda tu diagnóstico →</a>
+
+      <div class="scarcity hero-el">Deja de pagar por piezas. Empieza a dirigir el sistema completo · Equipo de hasta 14 especialistas durante 12 meses · Solo 72 founders al año · <strong>Cupos disponibles este mes: 6</strong></div>
+    </div>
+
+    <!-- COLUMNA DERECHA: CALENDARIO -->
+    <div class="calendar-col" id="calendario">
+      <div class="calendar-card">
+        <div class="calendar-head">
+          <div class="calendar-title">Agenda tu diagnóstico</div>
+          <div class="calendar-sub">Demuestra si tienes el rigor para entrar en incubación</div>
+        </div>
+        <div class="calendar-embed">
+          <iframe src="https://api.leadconnectorhq.com/widget/booking/lE5guBdGXg5oZNKlKvb8" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="lE5guBdGXg5oZNKlKvb8_1784566352165"></iframe>
+        </div>
+        <div class="calendar-fine">Acceso gratuito · Sin compromiso</div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER LEGAL -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="https://www.incmastery.com" target="_blank">Política de Privacidad</a>
+    <a href="https://www.incmastery.com" target="_blank">Términos y Condiciones</a>
+  </div>
+  <div class="footer-text">
+    <p>© 2025 Mastery Incubator. Todos los derechos reservados.</p><br>
+    <p>Los resultados mostrados en esta página son proyecciones basadas en el desempeño del programa y experiencias de founders dentro del ecosistema Mastery. Los resultados individuales varían según el negocio, la industria, el nivel de compromiso y otros factores. Mastery Incubator no garantiza resultados específicos.</p><br>
+    <p>Este contenido fue creado por Mastery Incubator y no está respaldado, patrocinado ni asociado con Meta Platforms, Inc. El uso de plataformas publicitarias de Meta es independiente de los servicios ofrecidos por Mastery Incubator.</p>
+  </div>
+</footer>
+
+<script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+
+<!-- ══════════════════════════════════════
+     META PIXEL — EVENTO "SUBSCRIBE" AL HACER CLIC EN EL CTA
+     Se dispara en cualquier botón con la clase .js-cta
+     (nav y botón del hero), antes de que el usuario baje
+     al calendario.
+══════════════════════════════════════ -->
+<script>
+document.querySelectorAll('.js-cta').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    if (typeof fbq === 'function') {
+      fbq('track', 'Subscribe');
+    }
+  });
+});
+</script>
+
+<!-- ══════════════════════════════════════
+     META PIXEL — EVENTO "LEAD" AL CONFIRMAR CITA (opcional, ya incluido)
+     El widget de LeadConnector (GHL) emite un postMessage
+     'msgsndr-booking-complete' cuando el usuario confirma una
+     cita en el calendario. Lo escuchamos aquí para disparar el
+     evento estándar de Meta "Lead". Puedes quitar este bloque
+     si solo quieres los 3 eventos que pediste.
+══════════════════════════════════════ -->
+<script>
+window.addEventListener('message', function (event) {
+  if (typeof event.origin !== 'string' || event.origin.indexOf('leadconnectorhq.com') === -1) return;
+
+  var data = event.data;
+  var eventName = Array.isArray(data) ? data[0] : (data && data.type);
+
+  if (eventName === 'msgsndr-booking-complete' || eventName === 'appointment' || eventName === 'form_submitted') {
+    if (typeof fbq === 'function') {
+      fbq('track', 'Lead');
+    }
+  }
+});
+</script>
+
+</body>
+</html>
